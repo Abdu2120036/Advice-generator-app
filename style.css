@@ -6,3 +6,100 @@
     --DarkGrayishBlue: hsl(217, 19%, 24%);
     --DarkBlue: hsl(218, 23%, 16%);
 }
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(Fonts/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: 'Manrope';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DarkBlue);
+}
+
+.container {
+    background-color: var(--DarkGrayishBlue);
+    max-height: 450px;
+    max-width: 450px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    border-radius: 0.7rem;
+    color: var(--LightCyan);
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+img {
+    width: 100%
+}
+
+.mobile-img {
+    display: none;
+}
+
+.advice-con {
+    color: var(--NeonGreen);
+    font-size: 0.7rem;
+    letter-spacing: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.advice {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+button {
+    padding: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--NeonGreen);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    position: relative;
+    top: 1.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s
+}
+
+button:hover {
+    box-shadow: 0 0 10px 5px rgba(178, 248, 37, 0.8);
+    background-color: rgba(174, 250, 21, 0.8);
+}
+
+
+@media (max-width: 400px) {
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        height: 350px;
+        justify-content: space-between;
+    }
+}
