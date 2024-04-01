@@ -7,3 +7,7 @@
 
 ## About
 This will challenge my programming skills.
+
+## Side Note
+Wanted to add my own touch, didn't have time. 
+When free add my own quotes and automate them into the program.
